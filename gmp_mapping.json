@@ -19,7 +19,7 @@
   },
   "regex": {
     "htmlAndEntity": "<.*?>|&[#\\w]+;",  
-    "status": ">\\s*([^<]+)</a>.*?<span[^>]*>([UOC])</span>",  
+    "status": ">\\s*([^<]+)</a>[\\s\\S]*?<span[^>]*>([UOC])</span>"
     "listed": ">\\s*([^<]+)</a>.*?L@([\\d.]+)\\s*\\(([^)]+)\\)",  
     "mainValue": "<b>([^<]+)</b>"
   },
