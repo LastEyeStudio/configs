@@ -18,7 +18,7 @@
     "ipoCategory": "~IPO_Category"
   },
   "regex": {
-    "htmlAndEntity": "<.*?>|&[#\\w]+;",  
+    "htmlAndEntity": "<.*?>|&[#\\w]+;",
     "status": ">([^<]+)</a>.*<span[^>]+>([UOC])</span>",
     "listed": ">\\s*([^<]+)</a>.*?L@([\\d.]+)\\s*\\(([^)]+)\\)",
     "mainValue": "<b>([^<]+)</b>"
