@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "id": "~id",
+    "nameHtml": "Name",
+    "gmpHtml": "GMP",
+    "fireRatingHtml": "Fire Rating",
+    "subscription": "Sub",
+    "price": "Price",
+    "estListingHtml": "Est Listing",
+    "ipoSize": "IPO Size",
+    "lot": "Lot",
+    "peRatio": "~P/E",
+    "openDate": "Open",
+    "closeDate": "Close",
+    "boaDate": "BoA Dt",
+    "listingDate": "Listing",
+    "gmpUpdated": "GMP Updated",
+    "ipoCategory": "~IPO_Category"
+  },
+  "regex": {
+    "htmlAndEntity": "<.*?>|&[#\\w]+;",
+    "status": "> ([^<]+)</a>.*<span[^>]+>([UOC])</span>",
+    "listed": "> ([^<]+)</a>.*?L@([\\d.]+)\\s*\\(([^)]+)\\)",
+    "mainValue": "<b>([^<]+)</b>"
+  },
+  "defaults": {
+    "gmp": "--",
+    "profit": "--",
+    "investment": "--",
+    "fireRating": "--"
+  }
+}
