@@ -1,4 +1,39 @@
 {
-  "base_url": "https://webnodejs.investorgain.com",
-  "gmp_endpoint": "/cloud/report/data-read/331/1/8/2025/2025-26/0/sme?search=&r2&v=22-49"
+  "api_config": {
+    "base_url": "https://webnodejs.investorgain.com",
+    "gmp_endpoint": "/cloud/report/data-read/331/1/8/2025/2025-26/0/sme?search=&r2&v=22-49"
+  },
+  "gmp_mapping": {
+    "fields": {
+      "id": "~id",
+      "nameHtml": "Name",
+      "gmpHtml": "GMP",
+      "fireRatingHtml": "Fire Rating",
+      "subscription": "Sub",
+      "price": "Price",
+      "estListingHtml": "Est Listing",
+      "ipoSize": "IPO Size",
+      "lot": "Lot",
+      "peRatio": "~P/E",
+      "openDate": "Open",
+      "closeDate": "Close",
+      "boaDate": "BoA Dt",
+      "listingDate": "Listing",
+      "gmpUpdated": "GMP Updated",
+      "ipoCategory": "~IPO_Category"
+    },
+    "regex": {
+      "htmlAndEntity": "<.*?>|&[#\\w]+;",
+      "status": ">([^<]+)</a>.*<span[^>]+>([UOC])</span>",
+      "listed": ">\\s*([^<]+)</a>.*?L@([\\d.]+)\\s*\\(([^)]+)\\)",
+      "mainValue": "<b>([^<]+)</b>"
+    },
+    "defaults": {
+      "gmp": "--",
+      "profit": "--",
+      "investment": "--",
+      "fireRating": "--",
+      "status": "--"
+    }
+  }
 }
