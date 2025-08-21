@@ -5,6 +5,7 @@
   },
   "gmp_mapping": {
     "fields": {
+      "orderby": "~orderby1",
       "id": "~id",
       "nameHtml": "Name",
       "gmpHtml": "GMP",
