@@ -1,7 +1,7 @@
 {
   "api_config": {
     "base_url": "https://webnodejs.investorgain.com",
-    "gmp_endpoint": "/cloud/report/data-read/331/1/7/2025/2025-26/0/all?search=&r1&v=10-49"
+    "gmp_endpoint": "/cloud/v2/report/data-read/331/1/9/2026/2026-27/0/all?search="
   },
   "gmp_mapping": {
     "fields": {
@@ -11,7 +11,7 @@
       "gmpHtml": "GMP",
       "fireRatingHtml": "Rating",
       "subscription": "Sub",
-      "price": "Price",
+      "price": "Price (₹)",
       "estListingHtml": "Est Listing",
       "ipoSize": "IPO Size",
       "lot": "Lot",
@@ -20,7 +20,7 @@
       "closeDate": "Close",
       "boaDate": "BoA Dt",
       "listingDate": "Listing",
-      "gmpUpdated": "GMP Updated",
+      "gmpUpdated": "Updated-On",
       "ipoCategory": "~IPO_Category"
     },
     "regex": {
@@ -30,11 +30,7 @@
       "mainValue": "<b>([^<]+)</b>"
     },
     "defaults": {
-      "gmp": "--",
-      "profit": "--",
-      "investment": "--",
-      "fireRating": "--",
-      "status": "--"
+      "gmp": "--", "profit": "--", "investment": "--", "fireRating": "--", "status": "--"
     }
   }
 }
