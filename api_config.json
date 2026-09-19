@@ -30,7 +30,11 @@
       "mainValue": "<b>([^<]+)</b>"
     },
     "defaults": {
-      "gmp": "--", "profit": "--", "investment": "--", "fireRating": "--", "status": "--"
+      "gmp": "--",
+      "profit": "--",
+      "investment": "--",
+      "fireRating": "--",
+      "status": "--"
     }
   }
 }
