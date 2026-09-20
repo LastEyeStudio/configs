@@ -27,14 +27,23 @@
       "htmlAndEntity": "<.*?>|&[#\\w]+;",
       "status": ">([^<]+)</a>.*<span[^>]+>([A-Z]{1,2})</span>",
       "listed": ">\\s*([^<]+)</a>.*?L@([\\d.]+)\\s*\\(([^)]+)\\)",
-      "mainValue": "<b>([^<]+)</b>"
+      "mainValue": "<b>([^<]+)</b>",
+      "dateValue": "^[^<]*"
+    },
+    "status": {
+      "U":  { "label": "Upcoming",      "flag": "UPCOMING" },
+      "O":  { "label": "Open",          "flag": "OPEN" },
+      "C":  { "label": "Closed",        "flag": "CLOSE" },
+      "CT": { "label": "Closing Today", "flag": "CLOSING_TODAY" },
+      "LISTED": { "label": "Listed",    "flag": "LISTED" }
+    },
+    "tokens": {
+      "fireIcon": "&#128293;",
+      "listedTemplate": "Listed @ {price} ({gain})",
+      "smeMarker": "SME"
     },
     "defaults": {
-      "gmp": "--",
-      "profit": "--",
-      "investment": "--",
-      "fireRating": "--",
-      "status": "--"
+      "gmp": "--", "profit": "--", "investment": "--", "fireRating": "--", "status": "--"
     }
   }
 }
